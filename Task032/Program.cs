@@ -29,13 +29,14 @@ int[] array = FillArray(15, -9, 9);
 
 void ChangeArray(int[]arr)
 {
-    Console.Write("[");
+    
     for (int i=0; i<arr.Length; i++)
     {
-        Console.Write($"{arr[i]*(-1)}, ");
+       arr[i] = arr[i]*(-1);
     }
-    Console.WriteLine("]");
+    
 }
 
 PrintArray(array);
 ChangeArray(array);
+PrintArray(array);
